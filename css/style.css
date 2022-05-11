@@ -1,0 +1,11 @@
+	.container{
+		width: 1080px;
+		margin: auto;
+		text-align: center;
+	}
+	#datanya{
+		margin: auto;
+	}
+	table{
+		width: 100%;
+	}

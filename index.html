@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Game Tebak Negara</title>
+	<script type="text/javascript" src="js/myapp.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body onLoad=stat() onKeyPress=catchKeyCode()>
+	<div class="container">
+		<form id="datanya" name=form1>
+			<table class=tab border=0 bgcolor=#4EA4DE cellpadding="4" cellspacing="0">
+				<tr>
+				  <td class=td1>
+				    <input type=text size=46 name=hint value="Klik 'Tebak!' untuk memulai tebakan" readonly class=txt1 style="width: 90%">
+				  </td>
+				</tr>
+				<tr>
+				  <td class=td1>
+				    <input type=text name=guess1 size=50 class=txt2 title="Masukan tebakan anda disini">
+				  </td>
+				</tr>
+				<tr>
+				  <td class=td1 align=right>
+				    <input type=button value=Tebak! onClick=guessit() class=btn title="Click tebak untuk mendapatkan cluenya">
+				    <input type=button value=Clear onClick=clearBox() class=btn title="Click disini untuk membersihkan textbox">
+				    <input type=button value=Baru onClick=newGame() class=btn title="Click disini untuk memulai game baru">
+				  </td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
